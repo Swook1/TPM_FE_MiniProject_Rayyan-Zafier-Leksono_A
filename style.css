@@ -1,0 +1,106 @@
+/*
+Line Height: 200% (paragraph)
+Font-size : 
+14px (paragraph)
+64px (title)
+
+Colors : 
+#4928FF (Accent)
+#000000 (Base)
+#615D5D (Secondary)
+#EAEAEA (Light)
+#E3E3E3 (Background)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  line-height: 200%;
+}
+
+body {
+  font-family: "Inter";
+  min-height: 100vh;
+
+  background: #e3e3e3;
+
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.card {
+  width: min(80vw, 24rem);
+
+  border-radius: 0.5rem;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content > p {
+  color: #615d5d;
+  font-weight: 600;
+}
+
+.selection-line {
+  margin-bottom: -1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+
+  span {
+    width: 100%;
+    border: 0.125rem solid #e3e3e3;
+    border-radius: 1rem;
+  }
+
+  span:first-of-type {
+    border-color: #000000;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-weight: 700;
+  }
+
+  .close-btn {
+    cursor: pointer;
+  }
+}
+
+.circle-ornament {
+  padding: 1rem 0;
+
+  img {
+    height: 48px;
+  }
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 900;
+}
